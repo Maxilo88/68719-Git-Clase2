@@ -1,4 +1,4 @@
-# Log clase del 18/11/23 de Git: Desarrollo Colaborativo:
+# Log clase del 25/11/23 de Git: Desarrollo Colaborativo:
 
 - Instructor: Maximiliano Luis Principe.
 - Comisión: 68719.
@@ -15,10 +15,11 @@
 - GitLab
 - GitHub
 ### Uso de GitHub **(V. 26:30 min)**
-#### Creación de repositorio nuevo.
+#### Creación de repositorio nuevo en GitHub.
 - Vista de Github sobre la creación de nuevo repositorio.
 ![Visualización de repo nuevo en GitHub](Github_NewRepo.PNG)
-- Comunicación del repositorio local, con el repositorio de la nube.
+
+#### Comunicación del repositorio local, con el repositorio de la nube.
 - Comando para hacer un push del repositorio recién creado en Github, con el repo local
 ```sh
 git remote add origin https://github.com/Maxilo88/68719-Git-Clase2.git # es el URL que nos da Github sobre el repositorio creado y a donde queremos apuntar.
@@ -56,6 +57,11 @@ Esto significa que tanto el repo local como el remoto contienen el último commi
 - Comando "git diff"
 - Comando "git status --short" o "git status -s" **(16:18hs)**
 - Commit con mensajes largos **(16:27hs.)**
+
+```sh
+git commit # abre el editor de texto para un mensaje largo.
+```
+
 - Alias **(17:00hs.)**
     - Escribiendo un atajo me permite ejecuta un comando de git con varias opciones
     ```sh
@@ -103,3 +109,5 @@ git status --ignored # muestra todos los archivos incluidos los que se encuentra
 Importante ver el --help de este comando para la explicación del status "short", ya que se muestra la estructura en dos columnas. Vemos un ejemplo:
 
 ![Visualización de git status -s ](Github_StatusShort.PNG)
+
+La primer columna contiene lo que está en staging y del derecho lo que tenemos en el working directory. si no hay modificaciones, no se muestra ninguna letra. **dicho por el profe en V. 01:12:30**
