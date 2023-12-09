@@ -34,12 +34,24 @@ git remote remove <alias>
 ```
 - Subir el local al remoto (se realiza una vez por cada rama):
 "-u" upstream: Trakea o sigue la rama local con la rama remota que se crea al subirlo.
-"Remoto" : Nombre del repositorio, en nuestro caso "Origin"
+"Remoto" : Nombre del repositorio remoto, en nuestro caso "Origin"
 "Rama-local": sería el main
+
 ```sh
 git push -u <remoto> <rama-local> # General
 git push -u origin main # Para nuestro caso particular de estudio.
 ```
+- Visualización del comando 'git log --oneline' luego de trackear
+
+![Visualización de log luego del trackeo](Github_LogPush.PNG)
+
+La consola nos muestra a partir de que Commit fue realizado el push con el repositorio remoto y en que commit se encuentra actualmente el repositorio local main. por otro lado el "apuntador" HEAD, mostrará donde estamos parados actualmente.
+En el siguiente print se realiza el mismo log pero luego de realizar un push.
+
+![Visualización de log luego del segundo push](Github_LogPush2.PNG)
+
+Esto significa que tanto el repo local como el remoto contienen el último commit realizado. Lo que no quiere decir que podamos hacer modificado el repo actual sin realizar un commit nuevo.
+
 - Comando "add --patch" para comitear parte de un archivo, dejando fuera otros sectores del programa. FUNCIONALIDAD IMPORTANTE. **(15:55hs)**
 - Comando "git diff"
 - Comando "git status --short" o "git status -s" **(16:18hs)**
@@ -88,4 +100,6 @@ git status -s # significa short, modo abreviado.
 git status -s -b # ademas de short muestra la rama en la que se encuentra.
 git status --ignored # muestra todos los archivos incluidos los que se encuentran en el archivo .ignore.
 ```
-Importante ver el --help de este comando para la explicación del status "short"
+Importante ver el --help de este comando para la explicación del status "short", ya que se muestra la estructura en dos columnas. Vemos un ejemplo:
+
+![Visualización de git status -s ](Github_StatusShort.PNG)
