@@ -1,2 +1,6 @@
 .env
 Git_status_15.26hs.PNG
+Log/ 
+Temp/
+
+# Generalmente colocado en el root del proyecto. estos archivos o carpetas son ignorados por git al momento del uso del comando git status.
