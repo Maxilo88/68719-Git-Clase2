@@ -149,3 +149,13 @@ mostrar las ramas del repositorio.
 y mostrar las ramas del repositorio.
 
 vamos a realizar diferentes modificaciones en el archivo index.html para mostrar como funcionan las ramas. veremos que las modificaciones de una no afectan a las otras. Al final quedará el trabajo a medio terminar, atento a que a este punto del curso, aún no habíamos visto la funcionalidad de Merge 
+
+Vemos un ejemplo de como se ven las branchs con el siguiente comando:
+
+```sh
+git log --oneline --all --decorate --graph
+```
+
+![Visualización de git branch --graph ](Git_branchgraph.PNG)
+
+Se visualiza también el aporte que hizo el profe a mi repo cuando se explicó el concepto de fork y trabajo colaborativo en la última clase del 09/12/23.
