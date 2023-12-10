@@ -1,15 +1,7 @@
 .env
-Git_status_15.26hs.PNG
+
 Log/ 
 Temp/
-Github_NewRepo.PNG
-Github_FetchPush.PNG
-Github_StatusShort.PNG
-Github_LogPush.PNG
-Github_LogPush2.PNG
-Git_branchgraph.PNG
-
-
 
 
 # Generalmente colocado en el root del proyecto. estos archivos o carpetas son ignorados por git al momento del uso del comando git status.
