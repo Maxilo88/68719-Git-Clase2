@@ -85,10 +85,17 @@ git config --global --unset alias.ll
 git config --get-regexp alias
 ```
 ### Manejo de Ramas (Branches) **(17:06hs.)**
+
+- Generación de una nueva rama, que se genera en el último comit donde se encuentra el main.
 ```sh
 git branch [nombre de la rama] # Crear nueva rama.
 ```
-- listar Ramas: git branch
+- listar Ramas: 
+
+```sh
+git branch
+```
+
 - Moverme entre ramas: git switch [nombre rama]
 
 ```sh
@@ -111,7 +118,8 @@ git switch -c [nombre_rama].
 
 ### Comandos ya vistos pero que se revisaron en esta clase:
 
-- Help para los comandos:
+- Help para los comandos: Abre un archivo local en el browser predeterminado donde me muestra la documentación de ese comando.
+
 ```sh
 git [comando] --help
 git status --help # Ejemplo
@@ -127,7 +135,7 @@ Importante ver el --help de este comando para la explicación del status "short"
 
 ![Visualización de git status -s ](Github_StatusShort.PNG)
 
-La primer columna contiene lo que está en staging y del derecho lo que tenemos en el working directory. si no hay modificaciones, no se muestra ninguna letra. **dicho por el profe en V. 01:12:30**
+La primer columna contiene lo que está en staging área y del derecho lo que tenemos en el working directory. si no hay modificaciones, no se muestra ninguna letra. **dicho por el profe en V. 01:12:30**
 
 ### Sobre el ejercicio del Módulo 2 del laboratorio adicional:
 
@@ -139,3 +147,5 @@ mostrar las ramas del repositorio.
 mostrar las ramas del repositorio.
 3. Crear una nueva rama llamada 'accounting'
 y mostrar las ramas del repositorio.
+
+vamos a realizar diferentes modificaciones en el archivo index.html para mostrar como funcionan las ramas. veremos que las modificaciones de una no afectan a las otras. Al final quedará el trabajo a medio terminar, atento a que a este punto del curso, aún no habíamos visto la funcionalidad de Merge 
